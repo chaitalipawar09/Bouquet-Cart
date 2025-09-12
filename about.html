@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootCss/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootCss/style.css"></link>
+    <script src="./bootstrap.min.js"></script>
+     <script src="./navbar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+      <!--------------------- navigatio bar section  ------------------->
+   
+    <section class="navBar">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+   <img src="./bootImage/logo2.webp" alt="logo" style="width: 70px;" height="60px;" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " href="./about.html">About Us</a>
+           <li class="nav-item">
+          <a class="nav-link active " href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./birthday.html"> Birthday Flowers</a></li>
+            <li><a class="dropdown-item" href="./anivarsary.html">Aniversary Flowers</a></li>
+             <li><a class="dropdown-item" href="./bridal.html">Bridal Bouquet</a></li>
+              <li><a class="dropdown-item" href="./vase.html">Flowers in Vase</a></li>
+               <li><a class="dropdown-item" href="./gift.html"> Flowers in Gift Box</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./luxury.html">Luxury Flower</a></li>
+             <li><a class="dropdown-item" href="./all.html">All Flower</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#LoginModel">log  In</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search Flower..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <!-- Navbar Right Side -->
+<ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
+
+  <!-- Profile -->
+  <li class="nav-item">
+    <a class="nav-link d-flex align-items-center gap-2" href="#">
+      <i class="fa-solid fa-user fs-5"></i>
+      <span class="fw-semibold">Profile</span>
+    </a>
+  </li>
+
+  <!-- Cart -->
+  <li class="nav-item">
+    <a class="nav-link d-flex align-items-center gap-2"   data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" href="#">
+      <span class="position-relative d-inline-block">
+        <i class="fa-solid fa-cart-shopping fs-5"></i>
+        <span id="cart-count"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              style="font-size: .65rem;">0</span>
+      </span>
+      <span class="fw-semibold">Cart</span>
+    </a>
+  </li>
+</ul>
+      </form>
+    </div>
+  </div>
+</nav>
+<hr style="color:black;margin-top: 3px;">
+</section>
+<!------------------- aboutUs section ------------->
+<section>
+    <div class="container aboutUsSection">
+        <div class="row py-2">
+            <div class="col">
+             <h5></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center py-3 ">
+                <h1 style="color: darkcyan; text-shadow: 3px 3px 5px rgb(10, 77, 77);">About Us</h1>
+            </div>
+        </div>
+        <div class="row py-3 imageData" >
+          <div class="col-md-5">
+            <img src="./bootImage/baner2.webp" style="width: 450px;">
+          </div> 
+          <div class="col-md-7 ">
+            <p class="para">
+                Welcome to Bouquet Cart, your online flower boutique where every bloom tells a story.<br> We create fresh and beautiful flower arrangements that help you celebrate life’s special moments <br> birthdays, anniversaries, weddings, or even just a simple “I miss you.” Our mission is to spread happiness.<br> through flowers, delivering love and care with every bouquet. 🌹✨
+            </p>
+            <p class="para">
+                Flowers are not just gifts—they are emotions wrapped in petals. At Bouquet Cart.<br> We believe every bouquet carries a message of love, care, and joy. Whether it’s the smile of a loved one, the warmth of friendship, or the magic of a celebration. <br> Our flowers are designed to speak from the heart. With freshness in every bloom and elegance in every arrangement.<br> We bring you more than flowers—we bring you unforgettable moments. 🌸✨
+            </p>
+          </div> 
+        </div>
+    </div>
+</section>
+
+<!--------- CartoffCnvas -->
+<section class="CartCanvas">
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Your Cart</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <tr><td colspan="5" class="text-center">Your cart is empty</td></tr>
+      </tbody>
+    </table>
+    <div class="mt-3 d-flex justify-content-between align-items-center">
+      <h5>Total: ₹<span id="cart-total">0</span></h5>
+    </div>
+  </div>
+</div>
+</section>
+ <!-------------------- footer section -------------->
+ <section class="footer py-2">
+  <div class="container py-2">
+    <div class="row">
+      <div class="col-md-3" >
+        <p class="text-center text-muted mt-3">
+   Bloom with us at <b>Bouquet Cart</b> – where every flower tells a story. We bring fresh, hand-picked bouquets to make your moments unforgettable. 🌸
+</p>
+        <p>Subscribe Newsletter</p>
+        <input type="text"placeholder="type here"><button>Subscribe</button>
+       
+      </div>
+       <div class="col-md-3">
+        <ul>
+        <li><a class="nav-link active" aria-current="page" href="./about.html"> About Us</a></li>
+        <li><a  class="nav-link active" aria-current="page" href="#">Sell With Us</a></li>
+        <li><a   class="nav-link active" aria-current="page" href="#">Terms And Conditions </a></li>
+         <li><a  class="nav-link active" aria-current="page" href="#">Cancellation And Refund </a> </li>
+          <li><a  class="nav-link active" aria-current="page" href="#">Coupens And Deals</a></li>
+           <li><a  class="nav-link active" aria-current="page" href="#">Retail Stores</a></li>
+           </ul>
+       </div>
+        <div class="col-md-3 FooterSecondCol" >
+          <ul>
+        <li><a  class="nav-link active" aria-current="page" href="#">Privacy & Policy</a></li>
+        <li><a  class="nav-link active" aria-current="page" href="#">Blogs</a> </li>
+        <li><a   class="nav-link active" aria-current="page"href="#">Reveiws</a></li>
+         <li><a   class="nav-link active" aria-current="page"href="#">Blogs</a></li>
+          <li><a  class="nav-link active" aria-current="page" href="#">SiteMap</a></li>
+           <li><a  class="nav-link active" aria-current="page" href="#">Quotes</a></li>
+           </ul>
+       </div>
+       <div class="col-md-3 FooterLastCol">
+        <ul>
+          <li>
+            <h6>Get In Touch</h6>
+            <p><a href="#">care@consumer</a></p>
+          </li>
+          <li>
+            <h6>Toll Free</h6>
+            <p>+91 8421715051</p>
+          </li>
+          <li>
+            <h6>For International Business</h6>
+            <p>exportflowerindia.com</p>
+          </li>
+          <li>
+            <h5>Spred The Love On Social Media</h5>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+        </ul>
+       </div>
+    </div>
+  </div>
+ </section>
+    <!-------------- copyrights section ---------------->
+ <section class="copyrights footer">
+<footer class="bg-light py-3 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <!-- Logo -->
+    <div class="d-flex align-items-center mb-2 mb-md-0">
+      <img src="./bootImage/logo2.webp" alt="Logo" style="height:40px; margin-right:10px;">
+      <span class="fw-bold">Bouquet Cart</span>
+    </div>
+    <div class="text-center mb-2 mb-md-0">
+      Copyright © 2025.GIFTS PVT.LTD
+    </div>
+
+    <div>
+      <span class="me-2">We Accept:</span>
+      <img src="./bootImage/visalogo.png" alt="Visa" style="height:15px; margin-right:5px;">
+      <img src="./bootImage/pay.png" alt="MasterCard" style="height:25px; margin-right:5px;">
+      <img src="./bootImage/PayPal_logo.svg" alt="PayPal" style="height:15px; margin-right:5px;">
+      <img src="./bootImage/Paytm.jpg" alt="Paytm" style="height:25px; margin-right:5px;">
+    </div>
+  </div>
+</footer>
+ </section>
+</body>
+</html>

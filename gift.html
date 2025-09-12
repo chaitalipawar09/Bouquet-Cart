@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootCss/bootstrap.min.css">
+    <script src="./bootstrap.min.js"></script>
+     <script src="./navbar.js"></script>
+    <link rel="stylesheet" href="./bootCss/style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+      <section class="navBar">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+   <img src="./bootImage/logo2.webp" alt="logo" style="width: 70px;" height="60px;" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " href="./about.html">About Us</a>
+           <li class="nav-item">
+          <a class="nav-link active " href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./birthday.html"> Birthday Flowers</a></li>
+            <li><a class="dropdown-item" href="./anivarsary.html">Aniversary Flowers</a></li>
+             <li><a class="dropdown-item" href="./bridal.html">Bridal Bouquet</a></li>
+              <li><a class="dropdown-item" href="./vase.html">Flowers in Vase</a></li>
+               <li><a class="dropdown-item" href="./gift.html"> Flowers in Gift Box</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./luxury.html">Luxury Flower</a></li>
+             <li><a class="dropdown-item" href="./all.html">All Flower</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#LoginModel">log  In</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search Flower..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <!-- Navbar Right Side -->
+<ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
+
+  <!-- Profile -->
+  <li class="nav-item">
+    <a class="nav-link d-flex align-items-center gap-2" href="#">
+      <i class="fa-solid fa-user fs-5"></i>
+      <span class="fw-semibold">Profile</span>
+    </a>
+  </li>
+
+  <!-- Cart -->
+  <li class="nav-item">
+    <a class="nav-link d-flex align-items-center gap-2"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  href="#">
+      <span class="position-relative d-inline-block">
+        <i class="fa-solid fa-cart-shopping fs-5"></i>
+        <span id="cart-count"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              style="font-size: .65rem;">0</span>
+      </span>
+      <span class="fw-semibold">Cart</span>
+    </a>
+  </li>
+</ul>
+      </form>
+    </div>
+  </div>
+</nav>
+<hr style="color:black;margin-top: 3px;">
+</section>
+<!--------------------------- cards section ------------->
+   <section class="cardsSection">
+    <div class="container" >
+        <div class="row">
+            <div class="col  py-4">
+                <h2 class="text-center " style="color: darkcyan;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-shadow: 3px 3px 5px rgb(3, 96, 96);">  Flower In Gift Box </h2>
+                <p class="text-center" style="color:rgb(8, 129, 129);"><b>“Fresh flowers in a vase – ready to brighten any space.”</b> </p>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 16rem;">
+  <img src="./bootImage/gift1.jpg" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Love In Gift Box</h5>
+    <p class="card-text">Price.975 <del style="color: grey;">990</del> <span style="color:orange;"> 5% Off</span></p>
+    <a href="#" class="btn btn-outline-primary add-to-cart " onclick="addToCart(this)" data-name="Love In Gift Box"data-price="975" data-image=" ./bootImage/gift1.jpg">Add to cart</a>
+    <a href="#" class="btn btn-primary ms-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Buy Now</a>
+             </div>
+            </div>
+         </div>
+    <div class="col-md-3">
+                <div class="card" style="width: 16rem;">
+  <img src="./bootImage/gift2.jpg" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title"> Enchanted Peach Box</h5>
+    <p class="card-text">Price.1000  <del style="color: grey;">1050</del>  <span style="color:orange;"> 5% Off</span></p>
+    <a href="#" class="btn btn-outline-primary add-to-cart " onclick="addToCart(this)" data-name="Enchanted Peach Box"data-price="1000"  data-image=" ./bootImage/gift2.jpg">Add to cart</a>
+    <a href="#" class="btn btn-primary  ms-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Buy Now</a>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+                <div class="card" style="width: 16rem;">
+  <img src="./bootImage/gift3.webp" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Special Roses In Gift Box</h5>
+   <p class="card-text">Price.1190<del style="color: grey;">1200</del>  <span style="color:orange;"> 5% Off</span></p>
+    <a href="#" class="btn btn-outline-primary add-to-cart" onclick="addToCart(this)" data-name="Special Roses In Gift Box"data-price="1190" data-image=" ./bootImage/gift3.webp">Add to cart</a>
+    <a href="#" class="btn btn-primary ms-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Buy Now</a>
+        </div>
+    </div>
+    </div>  
+    <div class="col-md-3">
+                <div class="card" style="width: 16rem;">
+<img src="./bootImage/gift4.jpg" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Mix Flower Box</h5>
+   <p class="card-text">Price.1500 <del style="color: grey;">1600 </del>  <span style="color:orange;"> 10% Off</span></p>
+     <a href="#" class="btn btn-outline-primary add-to-cart " onclick="addToCart(this)" data-name="Mix Flower Box"data-price="1500" data-image=" ./bootImage/gift4.jpg">Add to cart</a>
+    <a href="#" class="btn btn-primary  ms-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" >Buy Now</a>
+   </section>
+             <!------------- second birthday section -------->
+   <section  class="SecondCards">
+    <div class="container py-3">
+      <div class="row">
+            <div class="col-md-3 " >
+                <div class="card" style="width: 16rem;">
+  <img src="./bootImage/gift5.jpg" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Yellow Symphony</h5>
+   <p class="card-text">Price.995 <del style="color: grey;">1000</del>  <span style="color:orange;"> 10% Off</span></p>
+    <a href="#" class="btn btn-outline-primary add-to-cart " onclick="addToCart(this)" data-name="Yellow Symphony"data-price="995" data-image=" ./bootImage/gift5.jpg">Add to cart</a>
+    <a href="#" class="btn btn-primary  ms-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Buy Now</a>
+             </div>
+            </div>
+         </div>
+    <div class="col-md-3">
+                <div class="card" style="width: 16rem;">
+  <img src="./bootImage/gift6.webp" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Special Box for Love</h5>
+   <p class="card-text">Price.1100 <del style="color: grey;">1200</del>  <span style="color:orange;"> 10% Off</span></p>
+    <a href="#" class="btn btn-outline-primary add-to-cart"  onclick="addToCart(this)"data-name="Special Box for Love"data-price="1100" data-image=" ./bootImage/gift6.webp">Add to cart</a>
+    <a href="#" class="btn btn-primary ms-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Buy Now</a>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+                <div class="card" style="width: 16rem;">
+  <img src="./bootImage/gift7.webp" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Dreamy Box</h5>
+<p class="card-text">Price.1375 <del style="color: grey;">1405 </del>  <span style="color:orange;"> 7% Off</span></p>
+   <a href="#" class="btn btn-outline-primary add-to-cart" onclick="addToCart(this)" data-name="Dreamy Box"data-price="1375" data-image=" ./bootImage/gift7.webp">Add to cart</a>
+    <a href="#" class="btn btn-primary ms-3 " data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Buy Now</a>
+        </div>
+    </div>
+    </div>  
+    <div class="col-md-3">
+                <div class="card" style="width: 16rem;">
+  <img src="./bootImage/gift8.avif" class="card-img-top" alt="..." height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Aesthetic flowers In Box</h5>
+   <p class="card-text"> 1895<del style="color: grey;">2100</del>  <span style="color:orange;"> 18% Off</span></p>
+     <a href="#" class="btn btn-outline-primary add-to-cart " onclick="addToCart(this)" data-name="Aesthetic flowers In Box"data-price="1895" data-image=" ./bootImage/gift8.avif">Add to cart</a>
+    <a href="#" class="btn btn-primary  ms-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Buy Now</a>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <!--------- CartoffCnvas -->
+<section class="CartCanvas">
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Your Cart</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <tr><td colspan="5" class="text-center">Your cart is empty</td></tr>
+      </tbody>
+    </table>
+    <div class="mt-3 d-flex justify-content-between align-items-center">
+      <h5>Total: ₹<span id="cart-total">0</span></h5>
+    </div>
+  </div>
+</div>
+</section>
+    <!------------------- footer section ------------>
+ <section class="footer py-3">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-3 py-3" >
+       <p class="text-center text-muted mt-3">
+   Bloom with us at <b>Bouquet Cart</b> – where every flower tells a story. We bring fresh, hand-picked bouquets to make your moments unforgettable. 🌸
+</p>
+        <p>Subscribe Newsletter</p>
+        <input type="text"placeholder="type here"><button>Subscribe</button>
+      
+      </div>
+       <div class="col-md-3">
+        <ul>
+        <li><a class="nav-link active" aria-current="page" href="./about.html"> About Us</a></li>
+        <li><a  class="nav-link active" aria-current="page" href="#">Sell With Us</a></li>
+        <li><a   class="nav-link active" aria-current="page" href="#">Terms And Conditions </a></li>
+         <li><a  class="nav-link active" aria-current="page" href="#">Cancellation And Refund </a> </li>
+          <li><a  class="nav-link active" aria-current="page" href="#">Coupens And Deals</a></li>
+           <li><a  class="nav-link active" aria-current="page" href="#">Retail Stores</a></li>
+           </ul>
+       </div>
+        <div class="col-md-3 FooterSecondCol" >
+          <ul>
+        <li><a  class="nav-link active" aria-current="page" href="#">Privacy & Policy</a></li>
+        <li><a  class="nav-link active" aria-current="page" href="#">Blogs</a> </li>
+        <li><a   class="nav-link active" aria-current="page"href="#">Reveiws</a></li>
+         <li><a   class="nav-link active" aria-current="page"href="#">Blogs</a></li>
+          <li><a  class="nav-link active" aria-current="page" href="#">SiteMap</a></li>
+           <li><a  class="nav-link active" aria-current="page" href="#">Quotes</a></li>
+           </ul>
+       </div>
+       <div class="col-md-3 FooterLastCol">
+        <ul>
+          <li>
+            <h6>Get In Touch</h6>
+            <p><a href="#">care@consumer</a></p>
+          </li>
+          <li>
+            <h6>Toll Free</h6>
+            <p>+91 8421715051</p>
+          </li>
+          <li>
+            <h6>For International Business</h6>
+            <p>exportflowerindia.com</p>
+          </li>
+          <li>
+            <h5>Spred The Love On Social Media</h5>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-linkedin"></i>
+           <i class="fa-brands fa-square-instagram"></i>
+          </li>
+        </ul>
+       </div>
+    </div>
+  </div>
+ </section>
+   <!-------------- copyrights section ---------------->
+ <section class="copyrights footer">
+<footer class="bg-light py-3 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <!-- Logo -->
+    <div class="d-flex align-items-center mb-2 mb-md-0">
+      <img src="./bootImage/logo2.webp" alt="Logo" style="height:50px; width: 50px; margin-right:10px;">
+      <span class="fw-bold">Bouquet Cart</span>
+    </div>
+    <div class="text-center mb-2 mb-md-0">
+      Copyright © 2025.GIFTS PVT.LTD
+    </div>
+
+    <div>
+      <span class="me-2">We Accept:</span>
+      <img src="./bootImage/visalogo.png" alt="Visa" style="height:15px; margin-right:5px;">
+      <img src="./bootImage/pay.png" alt="MasterCard" style="height:25px; margin-right:5px;">
+      <img src="./bootImage/PayPal_logo.svg" alt="PayPal" style="height:15px; margin-right:5px;">
+      <img src="./bootImage/Paytm.jpg" alt="Paytm" style="height:25px; margin-right:5px;">
+    </div>
+  </div>
+</footer>
+ </section>
+</body>
+</html>
