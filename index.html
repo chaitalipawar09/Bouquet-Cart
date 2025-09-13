@@ -12,86 +12,88 @@
 
 </head>
 <body>
-  <!--------------------- navigatio bar section  ------------------->
-    <section class="navBar">
-   <nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top">
-  <div class="container-fluid">
-   <img src="./bootImage/logo2.webp" alt="logo" style="width: 70px;" height="60px;" >
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active " href="./about.html">About Us</a>
-           <li class="nav-item">
-          <a class="nav-link active " href="#contact">Contact Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="./birthday.html"> Birthday Flowers</a></li>
-            <li><a class="dropdown-item" href="./anivarsary.html">Aniversary Flowers</a></li>
-             <li><a class="dropdown-item" href="./bridal.html">Bridal Bouquet</a></li>
-              <li><a class="dropdown-item" href="./vase.html">Flowers in Vase</a></li>
-               <li><a class="dropdown-item" href="./gift.html"> Flowers in Gift Box</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./luxury.html">Luxury Flower</a></li>
-             <li><a class="dropdown-item" href="./all.html">All Flower</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#LoginModel">Log In</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" id="searchInput" placeholder="Search Flower..." aria-label="Search" style="height: 50px;">
-        <button class="btn btn-outline-success" type="submit" id="searchBtn" style="height: 50px;">Search</button>
-      <!-- Navbar Right Side -->
-<ul class="navbar-nav ms-auto d-flex align-items-center gap-2">
-  <!-- track order -->
-    <li class="nav-item text-center" style="margin:0px;">
-          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#trackOrderModal" href="#">
-          <i class="fa-solid fa-map-location"></i>
-            Track Order
-          </a>
-        </li>
-  <!-- Profile -->
- <li class="nav-item text-center">
-          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#profileModal" href="#">
-          <i class="fa-solid fa-user"></i>
-            Profile
-          </a>
-        </li>
+  <!--------------------- Navigation Bar Section ------------------->
+  <section class="navBar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid d-flex align-items-center">
 
-  <!-- Cart -->
-  <li class="nav-item text-center">
-    <a class="nav-link"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" href="#">
-      <span class="position-relative d-inline-block">
-        <i class="fa-solid fa-cart-shopping fs-5"></i>
-        <span id="cart-count"
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-              style="font-size: .65rem;">0</span> Cart
-      </span>
-           
-    </a>
-  </li>
-</ul>
-</form>
-  </div>
-  </div>
-</nav>
-<hr style="color:black;margin-top: 3px;">
-</section>
+        <!-- Logo -->
+        <img src="./bootImage/logo2.webp" alt="logo" style="width: 70px; height: 60px;">
+
+        <!-- Search Bar -->
+        <form class="d-flex ms-2" style="max-width: 200px;">
+          <div class="input-group">
+            <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
+            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+        </form>
+
+        <!-- Toggle Button (Right Next to Search Bar) -->
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+       <!-- Collapsible Menu -->
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <!-- Normal Menu Items -->
+    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link active" href="./about.html">About Us</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#contact">Contact Us</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./birthday.html">Birthday Flowers</a></li>
+        <li><a class="dropdown-item" href="./anivarsary.html">Anniversary Flowers</a></li>
+        <li><a class="dropdown-item" href="./bridal.html">Bridal Bouquet</a></li>
+        <li><a class="dropdown-item" href="./vase.html">Flowers in Vase</a></li>
+        <li><a class="dropdown-item" href="./gift.html">Flowers in Gift Box</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="./luxury.html">Luxury Flower</a></li>
+        <li><a class="dropdown-item" href="./all.html">All Flower</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#LoginModel">Log In</a>
+    </li>
+
+    <!-- ✅ Moved Track Order / Profile / Cart Here -->
+    <li class="nav-item ">
+      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#trackOrderModal" href="#">
+        <i class="fa-solid fa-map-location"></i> Track Order
+      </a>
+    </li>
+
+    <li class="nav-item ">
+      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#profileModal" href="#">
+        <i class="fa-solid fa-user"></i> Profile
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" href="#">
+        <span class="position-relative d-inline-block">
+          <i class="fa-solid fa-cart-shopping fs-5"></i>
+          <span id="cart-count"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                style="font-size: .65rem;">0</span> Cart
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      </div>
+    </nav>
+    <hr style="color:black; margin-top: 3px;">
+  </section>
+
 
 
 <!---------------- Baner section ---------->
-<section class="baner">
+<section class="banner w-100%">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -100,7 +102,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./bootImage/baner4.jpg" >
+      <img src="./bootImage/baner4.jpg"   class="d-block w-100" alt="Banner">
       <div class="carousel-caption d-none d-md-block">
          <p style="margin: 0px; color:rgb(2, 56, 56)"><b>Luxury Gift With.</p></b>
         <h1 style="color:darkslategray">Premium Flowers</h1>
@@ -133,7 +135,7 @@
 </section>
    <!--------------------------- cards section ------------->
    <section class="cardsSection">
-    <div class="container" >
+  <div class=" cart-section container-fluid px-0 py-4">
         <div class="row">
             <div class="col py-5">
                 <h2 class="text-center" style="color:darkcyan;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-shadow: 3px 3px 5px rgb(27, 102, 102)"> Fresh Flowers </h2>
@@ -267,7 +269,7 @@
       </p>
     </div>
     </div>
-   <div class="col-md-6">
+   <div class="col-md-6" style="width:350px">
     <div class="row">
       <div class="col me-4">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30210.88980767!2d74.3574425250324!3d18.826599738976274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc32dc0efa412e9%3A0x17e0b68940e44c24!2sShirur%2C%20Maharashtra%20412210!5e0!3m2!1sen!2sin!4v1756191142198!5m2!1sen!2sin" width="600" height="450" style="border:2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -419,7 +421,7 @@
 </section>
 
  <!-------------------- footer section -------------->
- <section class="footer py-2">
+ <section class="footer container-fluid px-0">
   <div class="container py-2">
     <div class="row">
       <div class="col-md-3" >

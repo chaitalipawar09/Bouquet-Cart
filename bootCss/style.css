@@ -1,66 +1,131 @@
- 
- body{
-    padding-top: 100px;
-     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      margin: 0;
-     background-color:rgb(34, 34, 34);
-     
- }
- .navbar{
-  background:-webkit-linear-gradient( black,grey);;
-  
- }
-    hr{
-    margin: 2px;
+body {
+  padding-top: 70px; /* match navbar height */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  background-color: rgb(34, 34, 34);
 }
+
+/* On small screens, add slightly more padding so content doesn't stick to navbar */
+@media (max-width: 768px) {
+  body {
+    padding-top: 85px;
+  }
+}
+
+.navbar {
+  background: -webkit-linear-gradient(black, grey);
+}
+
+/* Navbar container */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 12px;
+  gap: 8px;
+}
+
+/* Search bar container */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 15px;
+}
+
+/* On smaller screens, make search bar full width */
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%;
+  }
+  .navbar .container {
+    gap: 5px;
+    padding: 6px 10px;
+  }
+}
+
+.navbar-toggler {
+  margin-left: 8px;
+  align-self: flex-end;
+  margin-top: 5px;
+}
+
+hr {
+  margin: 2px;
+}
+
+/* Carousel */
 .carousel-item img {
-    width: 100%;
-   height: 450px;       
-    object-fit: cover;
-    padding: 30px 50px;
-    border-radius: 10px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 0;
+  padding: 0;
 }
 
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
 
-        .footer.FooterLastCol ul li i{
-            font-size: 20px;
-        }
-        .footer.FooterLastCol ul li{
-            list-style: none;
-        }
-         .footer{
-            background-color: rgb(235, 233, 233);
-         }
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: rgb(235, 233, 233);
+  padding: 20px;
+  text-align: center;
+}
 
-         .Productcontainer h2 {
-             text-align: center;
-             color: darkslategray ;
-         }
-         .Productcontainer{
-          color:darkslategray
-         }
-         
-          .CartCanvas{
-            text-align: center;
-            color: darkslategray;
-          }
-           #profileModal .modal-content {
-          border-radius: 15px;
-          box-shadow: 2px 5px 20px rgba(24, 22, 22, 0.15);
-             }
+.footer.FooterLastCol ul li i {
+  font-size: 20px;
+}
+.footer.FooterLastCol ul li {
+  list-style: none;
+}
 
-       #profileModal h5 {
-             font-weight: bold;
-           color:darkslategray
-            }
+.Productcontainer h2 {
+  text-align: center;
+  color: darkslategray;
+}
+.Productcontainer {
+  color: darkslategray;
+}
+
+.CartCanvas {
+  text-align: center;
+  color: darkslategray;
+}
+
+/* Profile Modal */
+#profileModal .modal-content {
+  border-radius: 15px;
+  box-shadow: 2px 5px 20px rgba(24, 22, 22, 0.15);
+}
+
+#profileModal h5 {
+  font-weight: bold;
+  color: darkslategray;
+}
 
 #profileModal .btn-primary {
-  background-color:darkslategray;
+  background-color: darkslategray;
   border: none;
 }
 
 #profileModal .btn-primary:hover {
-  background-color:rgb(86, 123, 123)
+  background-color: rgb(86, 123, 123);
 }
 
 #profileModal .btn-success {
@@ -72,7 +137,7 @@
   background-color: #157347;
 }
 
-
+/* Qty buttons */
 .qty-buttons {
   display: flex;
   align-items: center;
@@ -119,11 +184,10 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  background: #565454;
+  background: -webkit-linear-gradient(black, grey);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-   background: -webkit-linear-gradient(black,grey);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 thead {
@@ -137,7 +201,8 @@ thead th {
   font-size: 16px;
 }
 
-tbody td, tfoot td {
+tbody td,
+tfoot td {
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -154,29 +219,22 @@ tfoot td {
   font-size: 16px;
 }
 
-/* Product Image */
+/* Product Image in Cart */
 td img {
   border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-#offcanvasWithBothOptionsLabel{
+#offcanvasWithBothOptionsLabel {
   color: darkslategray;
   text-align: center;
-  text-shadow:3px 3px 5px rgb(21, 51, 51)
+  text-shadow: 3px 3px 5px rgb(21, 51, 51);
 }
-.offcanvas-body{
+
+.offcanvas-body {
   background: -webkit-linear-gradient(grey);
 }
 
-.para{
-  color:white
+.para {
+  color: white;
 }
-
-
-
-
-
-
-
-

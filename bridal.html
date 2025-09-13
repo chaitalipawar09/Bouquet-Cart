@@ -11,75 +11,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <body>
-      <section class="navBar">
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-   <img src="./bootImage/logo2.webp" alt="logo" style="width: 70px;" height="60px;" >
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active " href="./about.html">About Us</a>
-           <li class="nav-item">
-          <a class="nav-link active " href="#contact">Contact Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="./birthday.html"> Birthday Flowers</a></li>
-            <li><a class="dropdown-item" href="./anivarsary.html">Aniversary Flowers</a></li>
-             <li><a class="dropdown-item" href="./bridal.html">Bridal Bouquet</a></li>
-              <li><a class="dropdown-item" href="./vase.html">Flowers in Vase</a></li>
-               <li><a class="dropdown-item" href="./gift.html"> Flowers in Gift Box</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="./luxury.html">Luxury Flower</a></li>
-             <li><a class="dropdown-item" href="./all.html">All Flower</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#LoginModel">Log In</a>
-        </li>
+    <!--------------------- Navigation Bar Section ------------------->
+  <section class="navBar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid d-flex align-items-center">
+
+        <!-- Logo -->
+        <img src="./bootImage/logo2.webp" alt="logo" style="width: 70px; height: 60px;">
+
+        <!-- Search Bar -->
+        <form class="d-flex ms-2" style="max-width: 200px;">
+          <div class="input-group">
+            <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
+            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+        </form>
+
+        <!-- Toggle Button (Right Next to Search Bar) -->
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+       <!-- Collapsible Menu -->
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <!-- Normal Menu Items -->
+    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link active" href="./about.html">About Us</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#contact">Contact Us</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="./birthday.html">Birthday Flowers</a></li>
+        <li><a class="dropdown-item" href="./anivarsary.html">Anniversary Flowers</a></li>
+        <li><a class="dropdown-item" href="./bridal.html">Bridal Bouquet</a></li>
+        <li><a class="dropdown-item" href="./vase.html">Flowers in Vase</a></li>
+        <li><a class="dropdown-item" href="./gift.html">Flowers in Gift Box</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="./luxury.html">Luxury Flower</a></li>
+        <li><a class="dropdown-item" href="./all.html">All Flower</a></li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search Flower..." aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-        <!-- Navbar Right Side -->
-<ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#LoginModel">Log In</a>
+    </li>
 
-  <!-- Profile -->
-  <li class="nav-item">
-    <a class="nav-link d-flex align-items-center gap-2" href="#">
-      <i class="fa-solid fa-user fs-5"></i>
-      <span class="fw-semibold">Profile</span>
-    </a>
-  </li>
+    <!-- ✅ Moved Track Order / Profile / Cart Here -->
+    <li class="nav-item ">
+      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#trackOrderModal" href="#">
+        <i class="fa-solid fa-map-location"></i> Track Order
+      </a>
+    </li>
 
-  <!-- Cart -->
-  <li class="nav-item">
-    <a class="nav-link d-flex align-items-center gap-2"   data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  href="#">
-      <span class="position-relative d-inline-block">
-        <i class="fa-solid fa-cart-shopping fs-5"></i>
-        <span id="cart-count"
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-              style="font-size: .65rem;">0</span>
-      </span>
-      <span class="fw-semibold">Cart</span>
-    </a>
-  </li>
-</ul>
-      </form>
-    </div>
-  </div>
-</nav>
-<hr style="color:black;margin-top: 3px;">
-</section>
+    <li class="nav-item ">
+      <a class="nav-link" data-bs-toggle="modal" data-bs-target="#profileModal" href="#">
+        <i class="fa-solid fa-user"></i> Profile
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" href="#">
+        <span class="position-relative d-inline-block">
+          <i class="fa-solid fa-cart-shopping fs-5"></i>
+          <span id="cart-count"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                style="font-size: .65rem;">0</span> Cart
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      </div>
+    </nav>
+    <hr style="color:black; margin-top: 3px;">
+  </section>
+
+
 <!--------------------------- cards section ------------->
    <section class="cardsSection">
     <div class="container" >
